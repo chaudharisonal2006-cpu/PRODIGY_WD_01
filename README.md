@@ -6,3 +6,4 @@ Use HTML to structure the menu, CSS to style it, and JavaScript to add interacti
 changing the background color or font color of the menu when it is scrolled or when a menu item is hovered over."
 
 Live link-
+https://chaudharisonal2006-cpu.github.io/PRODIGY_WD_01/
