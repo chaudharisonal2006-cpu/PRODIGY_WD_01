@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+/* When Scrolled */
+nav.scrolled {
+    background-color: #1679AB;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Nav Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;           /* White for hero */
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+nav a:hover {
+    color: #FFD700;         /* Gold hover looks premium */
+}
+
+/* After Scroll - Change Text Color */
+nav.scrolled a {
+    color: white;
+}
+/* SECTIONS */
+.section {
+    padding: 120px 40px 60px 40px;
+    text-align: center;
+}
+
+/* Make home section smaller */
+.home {
+    min-height: 60vh;   /* instead of full screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home {
+    background: linear-gradient(to right, #1679AB, #31363F);
+    color: white;
+}
+
+.about {
+    background: #f4f6ff;
+}
+
+.services {
+    background: #e3f2fd;
+}
+
+.contact {
+    background: #d1c4e9;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #1679AB;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0f5e85;
+}
+
+/* SERVICE CARDS */
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #1679AB;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* SOCIAL LINKS */
+.social-links a {
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #1679AB;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
